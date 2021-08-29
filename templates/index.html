@@ -20,13 +20,12 @@
         <div style="margin: auto; width: 80%">
 
             <form id="form" class="input-group mb-3" action="/" method="post">
-                <input name="word" type="text" class="form-control" placeholder="Enter a word" aria-describedby="button-addon2">
-                <button class="btn btn-primary" type="submit" id="button-addon2">Search</button>
+                <input name="word" type="text" class="form-control" placeholder="Enter a word" aria-describedby="button-addon2" autofocus>
+                <button class="btn btn-primary" type="submit" id="button-addon2">Search</button><br>
             </form>
             {% if word %}
                 <p>Eminem uses the word '{{ word }}' <b>{{ word_count }}</b> times</p>
             {% endif %}
-
 
             <p class="fixed-bottom text-muted">*The word count is not fully accurate as the lyrics used to construct the dictionary were acquired via web scraping and i didn't filter out verses from featured artist.</p>
         </div>
